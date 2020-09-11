@@ -30,15 +30,19 @@
         <script src="scripts/js/jquery.min.js"></script>
         <script src="scripts/js/bootstrap.min.js"></script>
         <script>
-            var data = '2020/09/12';
-            var falta = (new Date(data).getTime() - new Date().getTime()) / 1000;
+            var falta = (new Date(2020, 9, 12, 0, 0, 0, 0).getTime() - new Date().getTime()) / 1000;
             var segundos = Math.round(falta % 60);
             var minutos = Math.round(falta / 60 % 60);
             var horas = Math.round(falta / 60 / 60 % 24);
 
             setInterval(function () {
-                if(segundos==0 && minutos==0 && horas==0)
+                if((segundos==0 && minutos==0 && horas==0))
                     return;
+                if(falta<0){
+                    $("#segundos").text('00');
+                    $("#minutos").text('00');
+                    $("#horas").text('00');
+                }
                 if (segundos == 0) {
                     segundos = 60;
                     minutos--;

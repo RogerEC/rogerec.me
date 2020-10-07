@@ -1,8 +1,8 @@
 <html>
     <head>
-        <title>Contagem Regressiva</title>
-        <meta name="keywords" content="">
-        <meta name="description" content="">
+        <title>Roger Eliodoro Condras</title>
+        <meta name="keywords" content="Engenharia de Computação, UFSC, Cursinho PES.">
+        <meta name="description" content="Graduando em Engenharia de Computação pela Universidade Federal de Santa Catarina Campus Araranguá e Vice-Presidente do Cursinho PES.">
         <meta name="robots" content="index, follow">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,56 +18,8 @@
         <link rel="icon" type="image/png" href="img/cronometro.png">
     </head>
     <body>
-        <main class="container-fluid text-center pt-5">
-            <h1>Contagem regressiva:</h1>
-            <div class="pt-5">
-                <h2><spam id="horas">--</spam>:<spam id="minutos">--</spam>:<spam id="segundos">--</spam></h2>
-            </div>
-            <div class="pt-5">
-                <h3 id="nome">Insira seu nome aqui.</h3>
-            </div>
-        </main>
-        <script src="scripts/js/jquery.min.js"></script>
-        <script src="scripts/js/bootstrap.min.js"></script>
-        <script>
-            var falta = (new Date(2020, 9, 12, 0, 0, 0, 0).getTime() - new Date().getTime()) / 1000;
-            var segundos = Math.round(falta % 60);
-            var minutos = Math.round(falta / 60 % 60);
-            var horas = Math.round(falta / 60 / 60 % 24);
-
-            setInterval(function () {
-                if((segundos==0 && minutos==0 && horas==0))
-                    return;
-                if(falta<0){
-                    $("#segundos").text('00');
-                    $("#minutos").text('00');
-                    $("#horas").text('00');
-                }
-                if (segundos == 0) {
-                    segundos = 60;
-                    minutos--;
-                }
-                if (minutos == -1) {
-                    minutos = 59;
-                    horas--;
-                }
-                segundos--;
-                if(horas<10)
-                    $("#horas").text('0'+horas);
-                else{
-                    $("#horas").text(horas);
-                }
-                if(minutos<10)
-                    $("#minutos").text('0'+minutos);
-                else{
-                    $("#minutos").text(minutos);
-                }
-                if(segundos<10){
-                    $("#segundos").text('0'+segundos);
-                }else{
-                    $("#segundos").text(segundos);
-                }
-            }, 1000);
-        </script>
+        <h1 class="text-center pt-5 pb-5">Roger Eliodoro Condras</h1>
+        <h4 class="text-center pt-3 pb-3">SITE EM CONSTRUÇÃO!</h4>
+        <p class="text-center pt-4"><a href="https://about.me/RogerEliodoroCondras">Link para as redes sociais</a></p>
     </body>
 </html>

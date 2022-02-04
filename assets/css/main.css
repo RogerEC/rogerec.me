@@ -50,23 +50,18 @@ main {
   border-radius: 100%;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
-a:hover {
+a:hover, a:visited:hover {
   color: rgb(100, 100, 100);
-}
-
-a:visited {
-  color: rgb(0, 0, 0);
 }
 
 .footer {
   width: 100%;
   color: #ffffff;
   text-align: center;
-  position: fixed;
-  bottom: 0;
+  background-color: #000000;
 }

@@ -59,6 +59,14 @@ a:hover, a:visited:hover {
   color: rgb(100, 100, 100);
 }
 
+.lattes {
+  color: rgb(255, 255, 255) !important;
+}
+
+.lattes:hover {
+  color: rgb(225, 225, 225) !important;
+}
+
 .footer {
   width: 100%;
   color: #ffffff;
